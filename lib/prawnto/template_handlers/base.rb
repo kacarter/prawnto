@@ -14,7 +14,7 @@ module Prawnto
 
       unless template_has_class_level_call_method?
         def compile(template)
-          self.class.call(template)
+          self.class.call(template, source)
         end
       end
     end
