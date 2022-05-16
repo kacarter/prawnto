@@ -8,7 +8,7 @@ module Prawnto
       def self.call(template, source)
         "_prawnto_compile_setup;" +
         "pdf = Prawn::Document.new(@prawnto_options[:prawn]);" +
-        "#{source}\n" +
+        "#{template.source}\n" +
         "pdf.render;"
       end
 
